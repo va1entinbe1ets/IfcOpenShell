@@ -83,3 +83,10 @@ jobs:
           release_name: "blenderbim-${{steps.version.outputs.version}}-alpha${{steps.date.outputs.date}} (unstable)"
           tag: "blenderbim-${{steps.version.outputs.version}}-alpha${{steps.date.outputs.date}}"
           overwrite: true
+
+  post-build:
+    needs: [build]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Final step after all builds
+        run: echo "Test single step after matrix."
