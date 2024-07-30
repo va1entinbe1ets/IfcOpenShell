@@ -31,6 +31,10 @@ standard, we also provide py312 builds.
 Sometimes, a build may be delayed, or contain broken code. We try to avoid this,
 but it happens.
 
+.. warning::
+
+Latest alpha builds are only compatible with Blender 4.2
+
 Bundling for Blender
 --------------------
 
